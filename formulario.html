@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="./imagenes/Genova-logo.png">
+   <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+</head>
+<body>
+    <div class="conteinerform"> 
+        <div class="logocointener">
+            <img class="logo" src="./imagenes/Genova-logo.png" alt="logo">
+        </div>
+        <div class="cont-buscar">
+            <input class="buscar" type="text" placeholder="Buscar...">
+            <button class="lupa"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <header>
+            <button class="abrir-menu" id="abrir"><i class="fa-solid fa-bars"></i>
+            </button>
+            <nav class="nav" id="nav">
+                <button class="cerrar-menu" id="cerrar"><i class="fa-regular fa-circle-xmark"></i></button>
+                <ul class="nav-list">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="#productos">Productos</a></li>
+                    <li><a href="./formulario.html">Contactos</a></li>
+                    <li><a href="preguntas.html">Pregunta Frecuentes</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="contFormulario">  
+        <div class="cont-form">
+            <form class="acceso">
+                <h3 class="text-title">Acceder</h3>
+                <div>
+                    <label for="nombreMail">Nombre de usuario o correo eléctronico</label> <br>
+                    <input type="text" name="nombreMail" required > <br>
+                </div>
+                <div>  
+                    <label for="nombre">Contraseña</label> <br>
+                    <input type="password" name="contraseña" required ><br><br>
+                    <input type="checkbox"  id="">
+                    <label for="nombre">Recordarme</label><br><br>
+                </div>    
+                <div class="btn-1">
+                    <button type="button" class="btn-1" onclick="acceso()">Acceso</button>
+                </div>
+            </form>
+      
+            <form class="datos">
+                <h3 class="text-title">Registrarse</h3>
+                <div>
+                    <label for="nombre">Nombre</label> <br>
+                    <input type="text" name="nombre" required > <br>
+                </div>
+                <div>
+                    <label for="mail">Dirección de correo eléctronico</label> <br>
+                    <input type="text" name="mail" required><br>
+                    <label for="nombre">Contraseña</label> <br>
+                    <input type="password" name="contraseña" required ><br><br>
+                </div>    
+                <div class="btn-1">
+                    <button type="button" class="btn-1" onclick="registro()">Registrarse</button>
+                </div>
+            </form>
+        </div>     
+            <div class="volver-1">   
+               <button type="button" class="btn-3" onclick="volver()">Volver a la página principal</button>
+            </div>
+    </main>
+        <footer class="contfooter">
+            <img class="logo1" src="./imagenes/geno-logo1.png" alt="logo">
+            <div class="left-content">
+                <h1>Contactos</h1>
+                <div class="icons">
+                    <div class="socialMediIcon">
+                        <a href="https://web.whatsapp.com/" class="whatsapp" target="_blank">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        3364223983
+                        </a>
+                    </div>
+                    <div class="socialMediIcon">
+                        <a href="https://www.google.com/maps/place/Almafuerte+61,+B2900+San+Nicol%C3%A1s+de+Los+Arroyos,+Provincia+de+Buenos+Aires/@-33.333334,-60.2196532,17z/data=!3m1!4b1!4m6!3m5!1s0x95b7678ed4fa73a3:0xb8c35e142508556d!8m2!3d-33.3333385!4d-60.2170783!16s%2Fg%2F11c5cmmzrc?entry=ttu&g_ep=EgoyMDI0MDkwOC4wIKXMDSoASAFQAw%3D%3D" class="ubicacion" target="_blank">
+                            <i class=" fa-solid fa-location-dot"></i>
+                        Almafuerte 61
+                        </a>
+                    </div>
+                    <div class="socialMediIcon">
+                        <a href="#" class="mail">
+                            <i class="fa-regular fa-envelope"></i>
+                            <span>dionichsarai7@gmail.com</span>
+                        </a>
+                    </div>
+                    <div class="socialMediIcon">
+                        <a href="https://www.instagram.com/genovaindumentaria.sn/?hl=es-la#" class="instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="registro">
+                <p class="registro-texto">¿Querés recibir nuestras ofertas? ¡Registrate ya mismo y comenzá a disfrutarlas!</p>
+                <div class="registro-mail">
+                    <input class="registro-email" type="email" name="email" id="email" placeholder="email">
+                    <button class="click"><i class="fa-solid fa-check"></i></i></button>
+                </div>
+               
+            </div>
+            <button id="whatsappButton" class="whatsapp-btn2">
+                <i class="fa-brands fa-whatsapp"></i>
+            </button>
+        </footer>
+    </div>
+    <script src="https://kit.fontawesome.com/5297a21458.js" crossorigin="anonymous"></script>
+    <script src="./JS/javascrip.js"></script>   
+</body>
+</html>
