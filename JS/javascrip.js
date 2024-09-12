@@ -36,7 +36,8 @@ cerrar.addEventListener("click", () => {
     // Inicializar el carrusel
     updateCarrusel();   
 
-   //me lleva a whatsaap
+   
+//me lleva a whatsaap
 document.getElementById('whatsappButton').addEventListener('click', function() {
     const phoneNumber = '3364223983'; 
     const message = 'Hola, me gustaría obtener más información.'; 
@@ -54,7 +55,14 @@ function registro(){
     location.href="index.html"
     
 }
-//referencia al boton de volver a la pagina inicila 
+//referencia al boton de volver a la pagina inicial
 function volver(){
     location.href="index.html"
 }
+// Me pregunta si quiero abandonar la pagina
+window.addEventListener('beforeunload', function(event) {
+    const message = '¿Estás seguro de que quieres salir?';
+    event.preventDefault();  
+    event.returnValue = message; 
+    return message;
+});

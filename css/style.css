@@ -73,6 +73,7 @@ header{
 
 .nav-list li a{
     color: #fff;
+    
     }
 
 .abrir-menu {
@@ -354,12 +355,12 @@ footer{
   .texh1{
     font-size: 1rem;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    text-align: center;
-    padding: 40px;
+    text-align: justify;
+    padding: 40px 0 10px 40px;
     color: rgb(54, 46, 46);
   }
   .contMedios{
-   margin: 20px;
+   margin: 10px;
   }
   .contMedios p{
     padding: 10px;
@@ -397,6 +398,7 @@ footer{
     .nav-list li a{
         color: rgb(24, 10, 10);
         transition: 400ms;
+       
     }
     .nav-list li a:hover{
         color: #fff;
@@ -431,7 +433,7 @@ footer{
     display: flex;
 }
 .contMedios{
-    margin:100px;
+    margin:50px;
    }
 }
 @media screen and (max-width:700px){
@@ -441,24 +443,39 @@ footer{
 .nav{
     opacity: 0;
     visibility:hidden;
+    display: flex;
     flex-direction: column;
-    align-items: end;
-    gap: 1rem;
+    align-items:end;
+    gap: 2rem;
     position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
     background-color: rgba(235, 167, 158, 0.63);
-    padding: 2rem;
+    padding: 3rem;
     box-shadow: 0 0 0 100vmax rgba(0,0,0,.5);
-    }
-.nav-list{
+   
+}
+.nav-list {
     flex-direction: column;
     align-items: end;
-    }
-    .nav.visible{
+}
+.nav-list li a {
+    color:  rgb(24, 10, 10);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 18px;
+    width: 100%;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+   
+}  
+.nav.visible{
         opacity: 1;
         visibility: visible;
-    }
+}
     
 }
