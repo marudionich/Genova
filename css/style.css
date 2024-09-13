@@ -352,23 +352,33 @@ footer{
   /*hasta estilo al formulario*/
 
   /* inicio de estilo de preguntas frecuentes*/
+   .contMedios{
+    background-image: linear-gradient(pink,rgba(235, 167, 158, 0.63), rgb(228, 190, 228) );
+    min-height: 100%;
+    max-width: 100%;
+     
+}
   .texh1{
     font-size: 1rem;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    text-align: justify;
-    padding: 40px 0 10px 40px;
-    color: rgb(54, 46, 46);
+    font-family: cursive;
+    text-align: center;
+    color: rgb(121, 84, 84);
+    padding: 15px;
+  
   }
-  .contMedios{
-   margin: 10px;
-  }
+  
   .contMedios p{
-    padding: 10px;
+    padding: 5px;
+    font-family: cursive;
+    color: rgb(95, 66, 66);
   }
   
   .contMedios li{
     padding: 10px;
-  }
+    color: rgb(121, 53, 53);
+    font-family: cursive;
+   
+}
   .contMedios img{
     width: 40px;
     height: 30px;
@@ -432,9 +442,12 @@ footer{
 .cont-form{
     display: flex;
 }
-.contMedios{
-    margin:50px;
+.contMedios p{
+  margin: 10px;
    }
+.contMedios li{
+    margin: 10px;
+} 
 }
 @media screen and (max-width:700px){
  header{
